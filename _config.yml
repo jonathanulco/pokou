@@ -10,9 +10,8 @@ title: Pokoù - La Matrice
 email: pokou@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Bienvenue au pays des pokoù
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/pokou" # the subpath of your site, e.g. /blog
 locale: fr # the primary language of your content
-# twitter_username: neuillybasket
-# facebook_username: neuillybasket
+
 # Build settings
 markdown: kramdown
