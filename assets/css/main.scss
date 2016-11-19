@@ -137,6 +137,11 @@ article {padding:10rem 6rem;margin-bottom:8rem;background:$white;box-shadow:$box
   .like-input:hover,
   .like-input:focus {background-color:$brandcolor2;}
 }
+.business {
+  > div {padding:3rem 0;}
+  div:nth-of-type(2) p {text-align:right;}
+}
+
 #map {height:90vh;}
 .grid-images {
   figure {position:relative;z-index:-1;}
