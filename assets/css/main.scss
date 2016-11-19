@@ -131,7 +131,7 @@ article {padding:10rem 6rem;margin-bottom:8rem;background:$white;box-shadow:$box
 .cta:focus {background:$brandcolor2;}
 .form-buy {
   label {padding:1em 2em;font-weight:700;line-height:2em;}
-  input {font-size:2em;font-weight:700;}
+  input {font-size:2em;font-weight:700;border:3px solid #000;border-radius:3px 0 0 3px;}
   input:focus {background:#fff url(../images/pokou.svg) no-repeat 98% 50%;background-size:10%;}
   .like-input {padding:1.5em 2em;background:$brandcolor;color:#fff;text-align:center;text-decoration:none;}
   .like-input:hover,
