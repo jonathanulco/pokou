@@ -1,0 +1,103 @@
+---
+title : espace personnel
+layout : default
+---
+<div class="mw1140p center connexion">
+  <div class="grid-3 has-gutter">
+    <div class="one-thirds menu-tabs" role="tablist">
+      <ul>
+        <li><a href="#">Historique de paiement</a></li>
+        <li><a href="#">Faire un virement</a></li>
+        <li><a href="#">Acheter des pokoù</a></li>
+        <li><a href="#">Offrir un compte pokoù à un ami</a></li>
+      </ul>
+
+    </div>
+    <div class="two-thirds">
+      <h1>Mon espace personnel</h1>
+      <h2>Mon adresse pokoù</h2>
+      <label>Adresse pokoù</label>
+      <input type="text" value="akPcRXeeeU3Qn9vqTa2GJpEbGeAgSXdMrkG">
+      <img height="60" width="60" src="{{ site.baseurl }}/assets/images/qrcode.gif" alt="adresse qrcode">
+
+      <div class="">
+        <h2>Historique des paiements</h2>
+        <table>
+          <summary>Historique des paiements</summary>
+          <thead>
+            <tr scope="col">
+              <th>
+                Date
+              </th>
+              <th scope="col">
+                Destinataire
+              </th>
+              <th scope="col">
+                Montant
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                lundi 13 novembre 2017, 13h30
+              </td>
+              <td>
+                espace de coworking saint-brieuc
+              </td>
+              <td>
+                20
+              </td>
+            </tr>
+            <tr>
+              <td>
+                mecredi 15 novembre 2017, 14h30
+              </td>
+              <td>
+                Location salle de réunion Saint-Malo
+              </td>
+              <td>
+                10
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="">
+        <h2>Mon adresse Pokoù</h2>
+        <form>
+          <legend>Partager mon adresse pokou à mes amis</legend>
+          <label for="adresse-pokou">Mon adresse pokoù</label>
+          <input type="text" id="adresse-pokou">
+          <label for="friend-list">Adresse de mes amis</label>
+          <textarea id="friend-list"></textarea>
+          <input type="submit" name="name" value="Partager à mes amis">
+        </form>
+      </div>
+
+      <div class="">
+        <h2>Faire un virement</h2>
+        <form action="" method="">
+          <label for="vire">Adresse pokoù pour le virement</label>
+          <input type="text" id="vire" value="">
+          <label for="montant-virement">Montant</label>
+          <input type="text" id="montant-virement">
+          <input type="submit" name="name" value="faire le virement">
+        </form>
+      </div>
+
+      <div class="">
+        <h2>Offrir un compte pokou à un ami</h2>
+        <form action="" method="">
+          <label for="offer">Offrir un compte à un ami</label>
+          <input type="text" id="offer">
+          <label for="montant">Montant</label>
+          <input type="text" id="montant">
+          <input type="submit" name="name" value="offrir un compte">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</div>

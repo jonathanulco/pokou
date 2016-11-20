@@ -34,7 +34,7 @@ body {font-family: -apple-system,
   sans-serif; /* font stack from Medium */
 }
 :focus {outline-color:$brandcolor}
-a {color:$brandcolor;}
+a {color:$brandcolor;transition:all ease .3s;}
 a:hover,
 a:focus {background:$brandcolor;color:#fff;}
 article {padding:10rem 6rem;margin-bottom:8rem;background:$white;box-shadow:$box-shadow;
@@ -131,7 +131,7 @@ article {padding:10rem 6rem;margin-bottom:8rem;background:$white;box-shadow:$box
 .cta:focus {background:$brandcolor2;}
 .form-buy {
   label {padding:1em 2em;font-weight:700;line-height:2em;}
-  input {font-size:2em;font-weight:700;border:3px solid #000;border-radius:3px 0 0 3px;}
+  input {font-size:2em;font-weight:700;border:3px solid #000;background:#eee;}
   input:focus {background:#fff url(../images/pokou.svg) no-repeat 98% 50%;background-size:10%;}
   .like-input {padding:1.5em 2em;background:$brandcolor;color:#fff;text-align:center;text-decoration:none;}
   .like-input:hover,
@@ -139,6 +139,19 @@ article {padding:10rem 6rem;margin-bottom:8rem;background:$white;box-shadow:$box
 }
 .business {
   > div {padding:3rem 0;}
+}
+.connexion {
+  .menu-tabs {
+    ul {list-style:none;}
+    li {border-bottom:1px solid #fff;}
+    li a {display:block;padding:2rem 3rem;text-transform:uppercase;background:$brandcolor;color:$white;text-decoration:none;}
+    li a:hover,
+    li a:focus {background:$greylight;color:#141414;}
+  }
+
+}
+@media (max-width: $small + 1) {
+  .cta {margin:auto 2rem;}
 }
 
 #map {height:90vh;}
@@ -169,13 +182,13 @@ select,
 input {margin:0;font-size:1.4rem;letter-spacing: 0.03em;cursor:pointer;overflow:hidden;}
 label {margin-right:5px;font-size:1.8rem;text-align:right;}
 input {padding:1.5rem;}
-input:not([type="radio"]):not([type="checkbox"]):not([type="file"]):not([type="submit"]) {flex:1;border:none;width:100%;}
+input:not([type="radio"]):not([type="checkbox"]):not([type="file"]):not([type="submit"]) {flex:1;width:100%;}
 label input:not([type="radio"]):not([type="checkbox"]):not([type="file"]):not([type="submit"]) {width:auto;}
 span {font-style:italic}
 
 select,
 input[type="submit"],
-button {padding:1.5rem;position:relative;-moz-user-select:none;background-color:#fff;border:none;border-radius:2px;color:rgba(0, 0, 0, 0.87);text-align:center;transition:all 0.2s ease-in-out 0s;vertical-align:middle;box-shadow:$box-shadow;}
+button {padding:1.5rem;position:relative;-moz-user-select:none;background-color:$brandcolor;border:none;border-radius:2px;color:#fff;text-align:center;transition:all 0.2s ease-in-out 0s;vertical-align:middle;box-shadow:$box-shadow;}
 select:hover,
 input[type="submit"]:hover,
 button:hover,
@@ -185,7 +198,7 @@ button:focus,
 select:active,
 input[type="submit"]:active,
 button:active {background-color:$greylight;color:rgba(0, 0, 0, 0.87);}
-textarea {padding:1.5rem;min-height:15em;flex:1;border:none;}
+textarea {padding:1.5rem;min-height:15em;flex:1;}
 
 input[type="submit"],
 button {display:flex;margin:4rem 0 0 auto;}
